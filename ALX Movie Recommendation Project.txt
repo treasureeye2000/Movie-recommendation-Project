@@ -1,0 +1,57 @@
+ALX Movie Recommendation Project
+Table of Content
+Overview
+Source of Dataset
+Problem Solving Steps
+* Data Exploration and Preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature Engineering
+* Model Selection
+* Model Training
+* Model Evaluation
+* Prediction
+* Submission
+Overview
+This project creates a recommendation system that predicts how a user will rate a movie they have not yet viewed, based on their historical preferences. 
+Source of Dataset
+This dataset includes several million 5-star ratings collected from users of the online MovieLens movie recommendation service. For this prediction task, we'll be using a special version of the MovieLens dataset that has been enriched with additional data and resampled to ensure fair evaluation.
+* genome_scores.csv - a score mapping the strength between movies and tag-related properties. 
+* genome_tags.csv - user assigned tags for genome-related scores
+* imdb_data.csv - Additional movie metadata scraped from IMDB using the links.csv file. 
+* links.csv - File providing a mapping between a MovieLens ID and associated IMDB and TMDB IDs.
+* sample_submission.csv - Sample of the submission format for the hackathon. 
+* tags.csv - User assigned for the movies within the dataset.
+* test.csv - The test split of the dataset. Contains user and movie IDs with no rating data. 
+* train.csv - The training split of the dataset. Contains user and movie IDs with associated rating data. 
+
+
+Problem Solving Steps
+Data Exploration and Preprocessing
+* Load the data files.
+* Explore the structure of each file to understand the relationships between them.
+* Handle missing values, if any.
+* Merge datasets where necessary to create a comprehensive dataset.
+Exploratory Data Analysis (EDA)
+* Analyze the distribution of ratings.
+* Investigate user and movie statistics (e.g., average ratings, number of ratings).
+* Visualize the data to uncover patterns and insights.
+Feature Engineering
+* Create user and movie profiles using statistical features (e.g., mean rating, rating count).
+* Utilize additional data (e.g., genres, tags) to enrich the profiles.
+
+Model Selection
+* Implement collaborative filtering models (e.g., user-based, item-based).
+* Implement content-based filtering using movie metadata.
+* Use matrix factorization techniques (e.g., Singular Value Decomposition).
+Model Training
+* Split the data into training and validation sets.
+* Train the selected models using the training data.
+* Tune hyperparameters for optimal performance.
+Model Evaluation
+* Evaluate the models using Root Mean Square Error (RMSE).
+* Compare the performance of different models.
+Prediction
+* Generate predictions for the test set.
+* Ensure the predictions are in the required submission format.
+Submission
+* Create the submission file with the predicted ratings.
